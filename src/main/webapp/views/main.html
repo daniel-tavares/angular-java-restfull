@@ -1,0 +1,35 @@
+<md-content flex layout="column">
+  <!-- TOLLBAR-->
+  <md-toolbar>
+      <md-button class="md-fab md-mini md-primary" aria-label="Use Android">
+          <!--<md-icon md-svg-src="img/icons/android.svg" style="color: greenyellow;"></md-icon>-->
+        </md-button> 
+  </md-toolbar>
+  
+  
+  <div flex layout="row">
+      <!-- SIDBAR -->
+      <md-sidenav flex="20" md-is-locked-open="true" > <!--$mdMedia('min-width:20px')-->
+        <md-content layout="column">
+          <md-list>
+             	<md-list-item>
+          			<a class="md-primary" href="#/revendedor">Novo Revendedor</a>
+                </md-list-item>
+                 <md-list-item>
+		         		<a class="md-primary" ui-sref="main.listagem">Revendedores</a>
+		        </md-list-item>	
+                <md-list-item>
+          			<a class="md-primary" ui-sref="main.material">Material Angular</a>
+          		</md-list-item>	
+		       
+		  
+        </md-content>
+      </md-sidenav>
+
+      <!-- CONTENT-->
+      <div layout="column" flex>
+          <ui-view></ui-view>
+      </div>
+
+    </div> 
+</md-content>

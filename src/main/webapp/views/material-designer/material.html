@@ -1,0 +1,26 @@
+<div data-ng-controller="MaterialController as ctrl">
+   <h2> ICONES </h2>  
+
+  <div class="glyph"   layout="row" data-ng-repeat="icone in ctrl.icones" flex>
+      <div layout="column" ng-repeat="config in ctrl.iconConfig" flex>
+          <div class="preview-glyphs" flex> 
+            <md-icon md-font-set="material-icons" ng-style="{'font-size': config.size+'px'} " >
+               {{ icone.name }}
+            </md-icon>
+        </div>
+      </div>
+  </div>
+
+  <h4>links</h4>
+  <md-list>
+      <md-list-item>
+        <a href="https://material.io/icons/">https://material.io/icons/</a>
+      </md-list-item>
+      <md-list-item>
+        <textarea><md-icon md-font-set="material-icons">face</md-icon></textarea>
+      </md-list-item>      
+  </md-list> 
+<hr/>
+
+
+</div>

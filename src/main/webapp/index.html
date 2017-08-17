@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <title>Alvescake</title>
+    
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="lib/angular-material/angular-material.css">
+    <link rel="stylesheet" href="lib/angular-material/material-custom.css">
+    <!--<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://rawgit.com/daniel-nagy/md-data-table/master/dist/md-data-table.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+
+  	<style type="text/css">
+       @font-face {
+            font-family: "icomoon";
+            src: url("https://cdn.rawgit.com/angular/material/master/docs/app/fonts/icomoon.eot");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'icomoon';
+            src: url('https://cdn.rawgit.com/angular/material/master/docs/app/fonts/icomoon.eot?-cmq1um');
+            src: url('https://cdn.rawgit.com/angular/material/master/docs/app/fonts/icomoon.eot?#iefix-cmq1um') format('embedded-opentype'), url('https://cdn.rawgit.com/angular/material/master/docs/app/fonts/icomoon.woff?-cmq1um') format('woff'), url('https://cdn.rawgit.com/angular/material/master/docs/app/fonts/icomoon.ttf?-cmq1um') format('truetype'), url('https://cdn.rawgit.com/angular/material/master/docs/app/fonts/icomoon.svg?-cmq1um#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+<body  ng-app="alvescake" >
+
+
+    <ui-view></ui-view>
+
+	
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/bootstrap.min.js"></script>
+
+	<!-- ANGULARJS -->
+	<script src="lib/angular-1.5.8/angular.js"></script>
+	<script src="lib/angular-1.5.8/i18n/angular-locale_pt-br.js"></script>
+	<script src="lib/angular-1.5.8/angular-touch.min.js"></script>
+	<script src="lib/angular-1.5.8/angular-animate.min.js"></script>
+	<script src="lib/angular-1.5.8/angular-aria.min.js"></script>
+	<script src="lib/angular-1.5.8/angular-messages.min.js"></script>
+	<script src="lib/angular-ui-router/release/angular-ui-router.js"></script> 
+    
+
+    <!-- ANGULAR MATERIAL DESIGNER -->
+    <script src="lib/angular-material/angular-material.js"></script> 
+
+    <!-- DataTable Material Design -->
+	<script src="lib/angular-material/md-data-table.js"></script>
+	 
+	<script src="config/modules.js"></script>
+	<script src="config/route.js"></script>
+	
+	<script src="init.js"></script> 
+	
+	<script src="views/revendedor/revendedor-controller.js"></script>
+	<script src="views/material-designer/material-controller.js"></script>
+
+
+	<script src="views/revendedor/revendedor-service.js"></script>
+
+	
+	
+</body>
+</html>

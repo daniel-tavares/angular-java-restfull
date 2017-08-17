@@ -1,0 +1,546 @@
+body{
+  font-size: 14px;
+}
+
+#content{
+  background-color: #ebeff2;
+}
+#siteMenu{
+  z-index: 101;
+}
+
+#topo-geral {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  z-index: 100;
+}
+
+@media (max-width: 1280px){
+  #siteMenu{
+    z-index: 101;
+  }
+
+  #topo-geral {
+	z-index: 50;
+  }
+}
+
+.label-titulo{
+  color: rgba(0,0,0,0.54);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.label-conteudo{
+  color: rgba(0,0,0,0.87);
+  font-weight: 500;
+}
+
+.card{
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /*margin: 8px;*/
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+  background-color: rgb(255,255,255);
+  border-radius: 2px;
+}
+
+.card-filtro{
+  padding: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.14);
+}
+
+.card-heading{
+  padding: 10px 15px;
+}
+
+.card-heading.clickable:hover{
+  -webkit-transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
+  transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
+  background-color: rgba(158,158,158,0.2);
+}
+
+.card-heading.open{
+  z-index: 1;
+  -webkit-box-shadow: 0px 4px 4px -2px rgba(0,0,0,0.34);
+  -moz-box-shadow: 0px 4px 4px -2px rgba(0,0,0,0.34);
+  box-shadow: 0px 4px 4px -2px rgba(0,0,0,0.34);
+}
+
+.panel-open{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card > .panel-collapse > .panel-body {
+  background-color: #EBEFF2;
+}
+
+.logo-brand{
+  width: 135px;
+  height: 45px;
+  margin-left: 15px;
+}
+
+.md-sidenav-left._md-locked-open{
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.md-subheader.md-default-theme, .md-subheader{
+    background-color: rgb(255, 255, 255) !important;
+    font-weight: 600 !important;
+}
+
+.md-hue-2 > .md-toolbar-tools > h2 {
+  color: rgba(255,255,255,0.87) !important;
+}
+
+md-list-item.md-clickable:hover{
+  background-color: rgba(158,158,158,0.2);
+}
+
+.sidebar-material ul ul a {
+    padding: 10px 20px 10px 40px !important;
+}
+
+.panel-aplicacoes {
+  /*-webkit-transition: 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) all ;
+  -moz-transition: 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) all;
+  -ms-transition: 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) all;
+  -o-transition: 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) all;
+  transition: 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000) all;*/
+  background-color: white;
+  height: 800px;
+  z-index: 101;
+}
+
+.panel-aplicacoes md-toolbar, .panel-aplicacoes md-content {
+  z-index: 100;
+}
+
+.panel-aplicacoes.ng-hide {
+  height: 0;
+}
+
+.breadcrumb{
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: rgba(0,0,0,.54);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+}
+
+.breadcrumb .s16{
+  font-size: 16px!important;
+  width: 16px!important;
+  height: 16px!important;
+  line-height: 16px!important;
+}
+
+.breadcrumb .separator {
+    margin: 0 8px;
+}
+
+.breadcrumb md-icon {
+    margin: 0;
+}
+
+panel-aplicacoes{
+  margin: -16px;
+}
+
+.panel-aplicacoes {
+  transition: all linear 200ms;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.panel-aplicacoes.ng-hide {
+  transition: all linear 200ms;
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:600px;
+  left: 0px;
+}
+
+.panel-aplicacoes2 {
+  transition: all linear 200ms;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background-color: #EBEFF2;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: none !important;
+  padding: 8px 16px !important;
+}
+.panel-aplicacoes2.ng-hide {
+  /*transition: all linear 200ms;
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:600px;
+  left: 0px;
+  height: 0;*/
+}
+.panel-aplicacoes2 md-toolbar, .panel-aplicacoes2 md-content {
+  z-index: 100;
+}
+md-content.overlay {
+  overflow: hidden;
+}
+
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  transition: 100ms;
+}
+
+.listagem.ng-enter.ng-enter-active,
+.listagem.ng-leave {
+    opacity: 1;
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+
+.listagem.ng-leave.ng-leave-active,
+.listagem.ng-enter {
+    opacity: 0;
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+
+#sidebar-menu ul.active{
+    -webkit-animation:200ms slideInDown;
+    animation:200ms slideInDown;
+}
+
+#sidebar-menu ul.ng-hide{
+    -webkit-animation:200ms slideOutUp;
+    animation:200ms slideOutUp;
+}
+
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0);
+  }
+}
+
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+}
+
+#card-login md-input-container {
+    margin: 7px 0 !important;
+}
+
+/*Ajuste na paginação do data table*/
+.md-table-pagination .label{
+	font-size:100%;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.md-button.md-icon-button {
+	/*width: 30px;*/
+}
+
+/*Simulação de label e input em div*/
+.secondary-text {
+  font-size: 11px !important;
+  color: rgba(0,0,0,0.54);
+  margin-top: 0px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-right: 15px;
+}
+.primary-text {
+  color: rgba(0,0,0,0.87);
+  font-size: 16px !important;
+  margin: 0 0 10px 0 !important;
+  padding-right: 15px;
+}
+
+/*Ajuste no z-index para compatibilidade com o esefa*/
+md-backdrop.md-dialog-backdrop, md-backdrop._md-dialog-backdrop {
+  z-index: 101 !important;
+}
+md-backdrop.md-sidenav-backdrop {
+  z-index: 101; 
+}
+#sidebar-menu > ul > li > a.active {
+  background-color: #EBEFF2 !important;
+  border-left: 3px solid transparent !important;
+  color: initial !important;
+  /*font-size: 16px;*/
+  font-weight: bold;
+}
+.md-dialog-container {
+  z-index: 102 !important;
+}
+.md-select-menu-container {
+    z-index: 103 !important;
+}
+.md-datepicker-calendar-pane {
+    z-index: 103 !important;
+}
+
+/*Correções e personalização do toast*/
+md-toast .md-toast-content {
+  padding-right: 0px !important;
+}
+md-toast .md-toast-content .md-toast-text {
+  font-size: 16px !important;
+}
+md-toast .md-toast-content {
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+md-toast button {
+  border-left: 1px solid rgba(255,255,255,0.3) !important;
+  padding: 0px 17px !important;
+  border-radius: 0px !important;
+}
+md-toast.success .md-toast-content, md-toast.success button {
+  background-color: #4CAF50 !important;
+  color: rgba(255,255,255,0.87) !important;
+}
+md-toast.error .md-toast-content, md-toast.error button {
+  background-color: #f44336 !important;
+  color: rgba(255,255,255,0.87) !important;
+}
+md-toast.warn .md-toast-content, md-toast.warn button {
+  background-color: #FFD740 !important;
+  color: rgba(0,0,0,0.87) !important;
+}
+md-toast.info .md-toast-content, md-toast.info button {
+  background-color: #2196f3 !important;
+  color: rgba(255,255,255,0.87) !important;
+}
+md-card.sucesso {
+  background-color: #A5D6A7;
+}
+
+
+/* Date Picker com 100% de largura */
+.dp-100 .md-datepicker-input-container {
+  position: initial;
+  display: flex;
+  margin-top: -20px;
+}
+
+
+md-input-container {
+  margin-right: 15px;
+}
+md-input-container.md-icon-right + button.md-icon-button.md-button{
+	margin: 18px;
+}
+md-input-container.md-icon-right + button.md-icon-button.md-button md-icon{
+    position: absolute;
+    top: 8px;
+    right: 2px;
+    margin: 0px;
+}
+
+
+
+/* INICIO NOVO BREADCRUMB */
+.ngbreadcrump {
+  margin: 0 0 20px 0 !important;
+  padding: 0 0 5px 0 !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+}
+.ngbreadcrump h3 {
+  clear: both;
+  color: rgba(0,0,0,0.6);
+  font-size: 20px;
+  padding: 10px 0 0 0 !important;
+}
+.ngbreadcrump .keyboard-arrow-right {
+  font-size:16px !important; 
+  padding:2px 0 0 5px;
+  float: left;
+}
+.ngbreadcrump .limit-text {
+  text-overflow: ellipsis;
+  height: 20px;
+  float: left;
+}
+.ngbreadcrump .clear {
+  clear: both;
+}
+.ngbreadcrump .switch {
+  margin:0px !important; 
+  padding:0px !important;
+}
+.ngbreadcrump .crit, #crit {
+
+}
+.d-n {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .ngbreadcrump .limit-text {
+    max-width: 100px;
+    overflow: hidden;
+    white-space:nowrap;
+  }
+}
+/* FIM NOVO BREADCRUMB */
+
+
+/* MD-SUBHEADER COM TRANSPARENCIA */
+.md-subheader.mdLists {
+  background-color: rgba(255, 255, 255, 0) !important;
+  font-weight: initial !important;
+}
+p.mdListsCategoria {
+  padding: 16px 0 16px 16px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.60)
+}
+.md-subheader-wrapper {
+  margin: 0 55px 0 8px !important;
+}
+.md-subheader-wrapper .md-subheader.mdLists {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+md-card.md-group-card, md-card.md-group-card md-list {
+  padding: 0px !important;
+}
+
+md-card.md-group-card md-list md-list-item {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+md-card.md-group-card md-list md-list-item:last-child {
+  border-bottom: 0px;
+}
+
+
+/* INICIO MENU ESEFA RESPONSIVO */
+.swipeGeralMenu {
+  height: 100%;
+}
+.md-panel-top {
+  margin: 0px;
+  padding:10px 0 0 0px;
+  background-color: #1565C0;
+  height: 185px;
+  /*height: 56px;*/
+  position: relative;
+}
+.md-panel-top .btVoltar {
+  color: rgba(255,255,255,0.87);
+}
+.md-panel-top .fabImg {
+  position: absolute;
+  left: 16px;
+  bottom: 60px;
+  color: rgba(255,255,255,0.87);
+  font-size: 75px;
+}
+.md-panel-top .usuario {
+  font-size: 13px;
+  color: rgba(255,255,255,0.87);
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 5px 16px 0 16px;
+  text-align: left;
+  height: 30px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+.md-panel-top .usuario p {
+  font-size: 11px;
+  color: rgba(255,255,255,0.45);
+  position: absolute;
+  bottom: -18px;
+
+  right: 0px;
+  padding: 0px 16px 0 16px;
+  text-align: left;
+  height: 15px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+.md-panel-top .usuario .icoDown {
+  position: absolute;
+  right: 16px;
+  top: 2px;
+  color: rgba(255,255,255,0.87);
+  font-size: 22px;
+}
+/* FIM MENU ESEFA RESPONSIVO */

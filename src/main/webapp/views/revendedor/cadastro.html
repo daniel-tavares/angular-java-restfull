@@ -1,0 +1,94 @@
+<div ng-controller="RevendedorController as ctrl"  >
+
+
+<md-content>
+	 <md-card>
+	    <md-card-content>
+	      	<div layout="column" layout-xs="column">
+	      		 
+	      		 <div layout="row" layout-align="center center" flex>
+	      		 	<div  flex="40">
+			            <md-radio-group ng-model="data.group1" layout="row">
+							<md-radio-button value="1" class="md-primary">Física</md-radio-button>
+			      			<md-radio-button value="2" class="md-primary">Jurídica</md-radio-button>
+			     		</md-radio-group>
+                    </div>
+		     		<div flex="60">
+			     		<md-input-container >
+				            	<label for="cpfCnpj">CPF/CNPJ:</label>
+				            	<input id="cpfCnpj" name="cpfCnpj" type="text", data-ng-model="ctrl.revendedor.cpfCnpj">
+				        </md-input-container>
+				    </div>     
+	     	     </div>
+	          	 
+	          	 <div layout="row" layout-xs="column">
+		          	
+		          	<div flex="50" flex-xs="100">
+			          	<md-input-container>
+			            	<label for="nome">Nome:</label>
+			            	<input id="nome" name="nome" type="text", data-ng-model="ctrl.revendedor.nome">
+			          	</md-input-container>
+		          	</div>
+		          	
+		         
+	             </div>
+
+	      	</div>
+	    </md-card-content>
+	 
+
+	 </md-card>
+    	<md-card>
+	    <md-card-title>
+	      <md-card-title-text>
+	        <span class="md-headline">Enderecos</span>
+	      </md-card-title-text>
+	    </md-card-title>
+
+	    <md-card-content>
+	      	<div layout="row">
+	            <md-radio-group ng-model="data.group1">
+					<md-radio-button value="Apple" class="md-primary">Pessoa Física</md-radio-button>
+	      			<md-radio-button value="Banana">Pessoa Jurídica</md-radio-button>
+	     		</md-radio-group> 
+	          	
+	          	<md-input-container>
+	            	<label>Nome</label>
+	            	<input>
+	          	</md-input-container>
+	      	</div>	
+	    </md-card-content>
+	 </md-card>
+
+	 	<md-card>
+	    <md-card-title>
+	      <md-card-title-text>
+	        <span class="md-headline">Informações de Contatos</span>
+	      </md-card-title-text>
+	    </md-card-title>
+
+	    <md-card-content>
+	      	<div layout="row">
+	            <md-input-container>
+				 	 <label>Tipo Contato:</label>
+				   	 <md-select ng-model="ctrl.userState">
+				       	<md-option><em>None</em></md-option>
+				      	<md-option ng-repeat="sexo in ctrl.sexo" ng-value="sexo.id" ng-disabled="$index === 1">
+				       		{{sexo.descricao}}
+				       	</md-option>
+				   	 </md-select>
+				</md-input-container>
+
+	          	<md-input-container>
+	            	<label>Nome</label>
+	            	<input>
+	          	</md-input-container>
+	      	</div>	
+	    </md-card-content>
+	 </md-card>
+</md-content>    
+
+<md-input-container>
+		 <md-button class="md-primary md-raised" data-ng-click='vm.create()'>Salvar Revendedor</md-button>
+</md-input-container>
+</div>
